@@ -17,3 +17,5 @@ tests regarding the Test Pyramid layers
 - https://www.testcontainers.org/test_framework_integration/junit_5/
 - https://merikan.com/2020/10/getting-started-with-testcontainers/#spring-boot-and-testcontainers
 - https://www.baeldung.com/docker-test-containers
+- https://metamorphant.de/blog/posts/2020-03-10-beforeall-afterall-cucumber-jvm-junit/
+- https://www.baeldung.com/java-cucumber-hooks

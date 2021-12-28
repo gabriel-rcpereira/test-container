@@ -6,6 +6,7 @@ import com.grcp.demo.testcontainer.entrypoint.model.CompanyResponse;
 import com.grcp.demo.testcontainer.repository.CompanyRepository;
 import java.util.List;
 import java.util.stream.Collectors;
+import javax.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -41,7 +42,7 @@ public class CompanyController {
     }
 
     @PostMapping("/api/companies")
-    public ResponseEntity<Void> postNewCompany(@RequestBody CompanyRequest companyRequest) {
+    public ResponseEntity<Void> postNewCompany(@Valid @RequestBody CompanyRequest companyRequest) {
         var newCompany = new Company(companyRequest.name());
         this.companyRepository.save(newCompany);
         return new ResponseEntity<>(HttpStatus.CREATED);
