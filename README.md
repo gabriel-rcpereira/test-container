@@ -1,6 +1,6 @@
 # Test Container in Integration and Component tests
 
-Repository created to practice Test Container concepts to test an Application mainly in Integration and Component 
+Repository created to practice Test Container concepts testing an Application mainly in Integration and Component 
 tests regarding the Test Pyramid layers
 
 ## Stack
